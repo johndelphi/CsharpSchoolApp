@@ -6,7 +6,7 @@ namespace SchoolLibrary
 {
     class School
     {
-       public string _twitterAdress { get; set; }
+      public string _twitterAdress { get; set; }
       public string SchoolName { get; set; }
       public string SchoolAdress { get; set; }
       public string City{ get; set; }
@@ -23,6 +23,20 @@ namespace SchoolLibrary
                     throw new Exception("twitter address formating should start with @");
                 }
             }
+     
+        }
+        public School()
+        {
+            PhoneNumber = "663-3409489";
+
+        }
+        public School(String schoolname,String phoneNumber)
+        {
+            SchoolName = schoolname;
+            phoneNumber = PhoneNumber;
+
+                
         }
     }
+   
 }
